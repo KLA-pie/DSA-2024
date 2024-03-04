@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite name="NeedlemanWunschTest" tests="8" skipped="0" failures="0" errors="0" timestamp="2024-03-03T05:06:13" hostname="Quantum-Kimonos" time="0.068">
+  <properties/>
+  <testcase name="testGapAtEnd()" classname="NeedlemanWunschTest" time="0.028"/>
+  <testcase name="testGapPenalty()" classname="NeedlemanWunschTest" time="0.003"/>
+  <testcase name="testGapAtBeginning()" classname="NeedlemanWunschTest" time="0.002"/>
+  <testcase name="testGapInMiddle()" classname="NeedlemanWunschTest" time="0.002"/>
+  <testcase name="testDifferentLengthSequences()" classname="NeedlemanWunschTest" time="0.002"/>
+  <testcase name="testMultipleGaps()" classname="NeedlemanWunschTest" time="0.001"/>
+  <testcase name="testOneCharacterMismatch()" classname="NeedlemanWunschTest" time="0.001"/>
+  <testcase name="testPerfectMatch()" classname="NeedlemanWunschTest" time="0.002"/>
+  <system-out><![CDATA[]]></system-out>
+  <system-err><![CDATA[]]></system-err>
+</testsuite>
