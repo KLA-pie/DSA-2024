@@ -1,25 +1,16 @@
-### Computing Resources
-The computers you can use on the backend are the following
+### Matrix Multiplication Analysis
 
-| Sorting Algorithm | Min | Max | Average | Uncertainty |
+Using the standard row-column multiplication and the Strassen multiplication, I benchmarked each of these multiplication algorithms by generating a list of randomly assorted arrays 10 times for each algorithm. Every algorithm was also tested with square matrices with a length of 32, 64, 128, and 256. All numbers are listed in milliseconds.
+
+| Method | Min | Max | Average | Uncertainty |
 | ------- | ----- | ----- | ----- | ----------- |
-| Radix (1000) | 145219 | 6802746 | 816171 | 1995531.47 |
-| Selection (1000) | 309629 | 1505994 | 517811 | 373443.65
-| Merge (1000) | 103224 | 755145 | 210093 | 187338.65
-| Insertion (1000) | 155116 | 1647620 | 399836 | 437531.88
-| Radix (5000) | 136584 | 556457 | 183624 | 124411.48 |
-| Selection (5000) | 4096308 | 4441858 | 4231422 | 103964.31
-| Merge (5000) | 384425 | 468239 | 407187 | 24640.76
-| Insertion (5000) | 880566 | 3061127 | 1137152 | 642145.71
-| Radix (10000) | 155367 | 182953 | 161163 | 7692.55 |
-| Selection (10000) | 15697303 | 17032571 | 16204899 | 420280.21
-| Merge (10000) | 773312 | 829464 | 800766 | 17588.68
-| Insertion (10000) | 3459077 | 3859368 | 3606031 | 114568.02
-| Radix (50000) | 537656 | 633094 | 584570 | 32638.84 |
-| Selection (50000) | 376854830 | 389829158 | 384020952 | 3289187.33
-| Merge (50000) | 3433352 | 4514325 | 4164532 | 437843.37
-| Insertion (50000) | 96656529 | 98789077 | 97698998 | 708102.99
-| Radix (100000) | 1020694 | 2608799 | 1199615 | 470185.07 |
-| Selection (100000) | 1536836242 | 1634663813 | 1564735984 | 2.95E7
-| Merge (100000) | 6898965 | 9331941 | 8229827 | 983341.91
-| Insertion (100000) | 398260122 | 408758166 | 401675732 | 3229970.70
+| Standard (32) | 1.1 | 0 | 4 | 1.3 |
+| Strassen (32) | 13.8 | 8 | 27 | 5.51
+| Standard (64) | 1.0 | 1 | 1 | 0 |
+| Strassen (64) | 45.9 | 25 | 66 | 11.97
+| Standard (128) | 5.7 | 4 | 7 | 0.78 |
+| Strassen (128) | 190.1 | 176 | 238 | 18.93
+| Standard (256) | 42.2 | 38 | 48 | 2.86 |
+| Strassen (256) | 1335.0 | 1259 | 1413 | 45.19
+
+Oddly enough,for the standard algorithm, it appeared to be superior in time complexity compared to the Strassen method. With a bit of research, the Strassen algorithm seems to be slightly superior in terms of worst case complexity with other implementations yielding a complexity of $O(n^{\log(7)})$ which is better than the cubic complexity that the standard method has which leads me to believe my implementation is somewhat faulty and could be improved.
