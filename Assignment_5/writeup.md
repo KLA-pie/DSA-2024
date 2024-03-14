@@ -13,4 +13,8 @@ Using the standard row-column multiplication and the Strassen multiplication, I 
 | Standard (256) | 42.2 | 38 | 48 | 2.86 |
 | Strassen (256) | 1335.0 | 1259 | 1413 | 45.19
 
+<<<<<<< HEAD
 Oddly enough,for the standard algorithm, it appeared to be superior in time complexity compared to the Strassen method. With a bit of research, the Strassen algorithm seems to be slightly superior in terms of worst case complexity with other implementations yielding a complexity of $O(n^{\log(7)})$ which is better than the cubic complexity that the standard method has which leads me to believe my implementation is somewhat faulty and could be improved.
+=======
+Oddly enough,for the standard algorithm, it appeared to be superior in time complexity compared to the Strassen method. With a bit of research, the Strassen algorithm seems to be slightly superior in terms of worst case complexity with other implementations yielding a complexity of $O(n^{\log(7)})$ which is better than the cubic complexity that the standard method has which leads me to believe my implementation is somewhat faulty and could be improved.
+>>>>>>> c99a2cbc4fabb53e5eee1df92cbc8070b23ef153
